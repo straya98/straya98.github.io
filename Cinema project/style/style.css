@@ -1,0 +1,384 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	background-image: url("../data/bgLogin.jpg");   
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	//background-image: url("../data/bgWrapper.jpg");
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+nav ul{
+	list-style-type: none;
+	
+}
+
+nav a{
+	text-decoration: none;
+	color:white;
+	display: block;
+	padding:15px;
+	text-align: center;
+	margin: 3px;
+	border: 2px solid #686868;
+	border-radius: 30px 0px 30px 0px;
+	background-color:black;
+	font-size:35px;
+	text-transform: uppercase;
+}
+
+section article h1{
+		text-align: center;
+		font-size: 50px;
+		color:white;
+		padding-bottom: 15px;
+		text-shadow: 1px 1px gray;
+		margin-bottom: 30px;
+	}
+
+	section article p{
+		font-size:18px;
+		padding-bottom: 15px;
+	}
+
+
+
+
+nav a:hover{
+	background-color: #606060;
+	transition: all 0.1s ease;
+}
+
+	.picture-container {
+	  cursor: pointer;
+	  height: 315px;
+	  perspective: 600;
+	  position: relative;
+	  width: 100%;
+	  background-position: center;
+	  font-size: 18px;
+	  text-align: left;
+	  border: 3px solid black;
+	  border-radius: 10px;
+	  background-color: black;
+	}
+	.picture {
+	  height: 100%;
+	  position: absolute;
+	  transform-style: preserve-3d;
+	  transition: all 1s ease-in-out;
+	  width: 100%;
+	  background-size: contain;
+	 
+	}
+	.picture:hover {
+	  transform: rotateY(180deg);
+	}
+	.picture .side {
+	  backface-visibility: hidden;
+	  border-radius: 6px;
+	  height: 100%;
+	  position: absolute;
+	  overflow: hidden;
+	  width: 50%;
+	}
+	.picture .back {
+	  background: black;
+	  color: white;
+	  line-height: 50px;
+	  text-align: center;
+	  transform: rotateY(180deg);
+	}
+
+	.searchWrap{
+		width: 100%;
+		//background-color: red;
+	}
+
+	.searchButton{
+		height: 30px;
+		width: 50%;
+		margin-bottom: 25px;
+		background-color: black;
+		color:white;
+		border-radius: 30px 0px 30px 0px; 
+	}
+
+	.searchbox{
+		width: 100%;
+		height: 50px;
+		border: 2px solid black;
+		font-size:30px;
+		box-sizing: border-box;
+		background-color: white;
+		padding:15px;
+		margin-bottom: 25px;
+		border-radius: 30px 0px 30px 0px;
+	}
+
+	.searchButton:hover{
+		background-color: #606060;
+		transition: all 0.1s ease;
+	}
+
+	.info{
+		text-decoration: none;
+		color:white;
+		display: block;
+		padding:15px;
+		text-align: center;
+		margin: 3px;
+		border: solid 1.5px gray;
+		border-radius: 30px 0px 30px 0px;
+		background-color:black;
+		font-size:40px;
+		text-transform: uppercase;
+		border:2px solid #686868;
+
+	}
+
+	.info:hover{
+		background-color: #5b5b5b;
+		transition: all 0.1s ease;
+	}
+
+		.flip-container {
+	perspective: 10000px;
+}
+	
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 250px;
+
+}
+
+.flipper {
+	transition: 1.2s;
+	transform-style: preserve-3d;
+	position: relative;
+
+}
+
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+	color:white;
+	font-size: 100%;
+	text-align: center;
+	line-height: 150%;
+}
+
+@media screen and (min-width: 768px){
+
+	nav ul{
+		display:flex;
+	}
+
+	nav li{
+		flex:1 1 0;
+	}
+
+	#blocks{
+		margin:25px;
+	}
+
+	.film{
+		//background-image: url("../data/bgfilm.jpeg");
+		background:rgba(0, 0, 0, 0.32);
+		box-sizing: border-box;
+		border:2px solid #686868;
+		margin-bottom: 30px;
+		padding:30px;
+		border-radius: 30px 0px 30px 0px;
+	}
+
+	section article h1{
+		text-align: center;
+		font-size: 50px;
+		color:white;
+		padding-bottom: 15px;
+		text-shadow: 1px 1px gray;
+	}
+
+	section article p{
+		font-size:18px;
+		padding-bottom: 15px;
+	}
+
+	section article iframe{
+		
+	}
+
+	.info{
+		text-decoration: none;
+		color:white;
+		display: block;
+		padding:15px;
+		text-align: center;
+		margin: 3px;
+		border: solid 1.5px gray;
+		border-radius: 30px 0px 30px 0px;
+		background-color:black;
+		font-size:40px;
+		text-transform: uppercase;
+		border:2px solid #686868;
+
+	}
+
+	.info:hover{
+		background-color: #5b5b5b;
+		transition: all 0.1s ease;
+	}
+
+	
+
+	.picture-container {
+	  cursor: pointer;
+	  height: 315px;
+	  perspective: 600;
+	  position: relative;
+	  width: 100%;
+	  background-position: center;
+	  font-size: 18px;
+	  text-align: left;
+	  border: 3px solid black;
+	  border-radius: 10px;
+	  background-color: black;
+	}
+	.picture {
+	  height: 100%;
+	  position: absolute;
+	  transform-style: preserve-3d;
+	  transition: all 1s ease-in-out;
+	  width: 100%;
+	  background-size: contain;
+	 
+	}
+	.picture:hover {
+	  transform: rotateY(180deg);
+	}
+	.picture .side {
+	  backface-visibility: hidden;
+	  border-radius: 6px;
+	  height: 100%;
+	  position: absolute;
+	  overflow: hidden;
+	  width: 50%;
+	}
+	.picture .back {
+	  background: black;
+	  color: white;
+	  line-height: 50px;
+	  text-align: center;
+	  transform: rotateY(180deg);
+	}
+
+	.searchWrap{
+		width: 100%;
+		//background-color: red;
+	}
+
+	.searchButton{
+		height: 30px;
+		width: 50%;
+		margin-bottom: 25px;
+		background-color: black;
+		color:white;
+		border-radius: 30px 0px 30px 0px; 
+	}
+
+	.searchbox{
+		width: 100%;
+		height: 50px;
+		border: 2px solid black;
+		font-size:30px;
+		box-sizing: border-box;
+		background-color: white;
+		padding:15px;
+		margin-bottom: 25px;
+		border-radius: 30px 0px 30px 0px;
+	}
+
+	.searchButton:hover{
+		background-color: #606060;
+	}
+
+
+
+	.flip-container {
+	perspective: 10000px;
+}
+	
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 500px;
+
+}
+
+.flipper {
+	transition: 1.2s;
+	transform-style: preserve-3d;
+	position: relative;
+
+}
+
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+	color:white;
+	font-size: 200%;
+	text-align: center;
+	line-height: 150%;
+	padding-top: 30px;
+}
+
+
+
+
+
+	
+}
+
+}

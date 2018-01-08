@@ -1,0 +1,121 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	//background-color:#3f3f3f;
+  background-image: url("../data/bgLogin.jpg");
+  opacity: 0.9;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1260px;
+	margin: 0 auto;
+	
+}
+
+.form {
+    background: #eceeee;
+    border: 1px solid #42464b;
+    border-radius: 6px;
+    height: 270px;
+    margin: 20px auto 0;
+    width: 60%;
+    padding-top: 25px;
+    margin-top: 25%;
+
+}
+
+input[type="password"], input[type="text"] {
+    background: white;  
+    border: 2px solid #a1a3a3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: black;
+    height: 40px;
+    margin: 20px;
+    width: 80%;
+
+}
+
+input[type="submit"] {
+  width:80%;
+  height:40px;
+  display:block;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  padding:12px;
+  margin:auto;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+
+input[type="submit"]:hover{
+  background-color: #5b5b5b;
+}
+
+
+@media screen and (min-width: 768px){
+
+
+
+	.form {
+  	background: #eceeee;
+  	border: 1px solid #42464b;
+  	border-radius: 6px;
+ 		height: 270px;
+  	margin: 20px auto 0;
+ 		width: 25%;
+ 		padding-top: 25px;
+    margin-top: 25%;
+
+}
+
+
+
+
+	input[type="password"], input[type="text"] {
+  	background: white;	
+  	border: 2px solid #a1a3a3;
+  	border-radius: 5px;
+ 	  box-sizing: border-box;
+ 	  color: black;
+	  height: 40px;
+ 	  margin: 20px;
+	  width: 80%;
+
+}
+
+input[type="submit"] {
+  width:80%;
+  height:40px;
+  display:block;
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  padding:12px;
+  margin:auto;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+
+

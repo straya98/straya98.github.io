@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/projekcije.css">
+	<title>Home page</title>
+</head>
+<body>
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="../template/Index.html">Početna</a></li>
+				<li><a href="../template/Projekcije.html">Projekcije</a></li>
+				<li><a href="../template/Prodavci.html">Prodavci</a></li>
+				<li><a href="../template/Login.html">Odjava</a></li>
+			</ul>
+		</nav>
+		
+
+		<section id="blocks">
+
+			<div>
+      				<h1 class="naslov">Dodavanje projekcija</h1>
+			</div>
+			
+			<div class="form">
+				<center><input type="text" name="ImeFilma" id="idFilma" placeholder="ID"></center>
+				<center><input type="text" name="ImeFilma" id="imeFilma" placeholder="Ime"></center>
+				<center>
+					<select name="cars" class="dropdownZanr">
+						<option>Zanr</option>
+    					<option value="volvo">Akcija</option>
+    					<option value="saab">Horror</option>
+   				 		<option value="fiat">Komedija</option>
+    					<option value="audi">Triler</option>
+  					</select>
+  				</center>
+
+  				<center><input type="date" name="Datum projekcije" class="date"></center>
+				<center><input type="time" name="Vreme projekcije" class="vremeProjekcije"></center>
+				<center>
+					<label for="file-upload" class="custom-file-upload">
+   						 Dodaj poster
+					</label>
+					<input id="file-upload" type="file"/>
+				</center>
+				<center><input type="submit" value="Dodaj projekciju"></center>
+			</div>
+
+
+		</section>
+
+		<section id="blocks">
+
+			<div>
+      				<h1 class="naslov">Izmena projekcija</h1>
+			</div>
+			
+			<div class="form">
+				<center>
+					<select name="cars" class="dropdownZanr">
+						<option>ID</option>
+    					<option value="id1">1</option>
+    					<option value="id2">2</option>
+   				 		<option value="id3">3</option>
+    					<option value="id4">4</option>
+  					</select>
+  				</center>
+				<center><input type="text" name="ImeFilma" id="imeFilma" placeholder="Ime"></center>
+				<center>
+					<select name="cars" class="dropdownZanr">
+						<option>Zanr</option>
+    					<option value="volvo">Akcija</option>
+    					<option value="saab">Horror</option>
+   				 		<option value="fiat">Komedija</option>
+    					<option value="audi">Triler</option>
+  					</select>
+  				</center>
+
+  				<center><input type="date" name="Datum projekcije" class="date"></center>
+				<center><input type="time" name="Vreme projekcije" class="vremeProjekcije"></center>
+				<center>
+					<label for="file-upload" class="custom-file-upload">
+   						 Promeni poster
+					</label>
+					<input id="file-upload" type="file"/>
+				</center>
+				<center><input type="submit" value="Izmeni projekciju"></center>
+			</div>
+
+
+		</section>	
+
+	</div>
+</body>
+</html>

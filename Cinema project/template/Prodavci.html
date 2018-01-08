@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/prodavci.css">
+	<title>Home page</title>
+</head>
+<body>
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="../template/Index.html">Početna</a></li>
+				<li><a href="../template/Projekcije.html">Projekcije</a></li>
+				<li><a href="../template/Prodavci.html">Prodavci</a></li>
+				<li><a href="../template/Login.html">Odjava</a></li>
+			</ul>
+		</nav>
+		
+
+		<section id="blocks">
+
+			<div>
+      				<h1 class="naslov">Dodavanje korisnika</h1>
+			</div>
+			
+			<div class="form">
+				<center><input type="text" name="username" id="username" placeholder="Korisnicko ime"></center>
+				<center><input type="password" name="password" id="password" placeholder="Lozinka"></center>
+				<center>
+					<select name="cars" class="dropdownZanr">
+    					<option value="menadzer">Menadzer</option>
+    					<option value="menadzer">Prodavac</option>
+  					</select>
+  				</center>
+
+  				<center><input type="text" name="imeKorisnika" placeholder="Ime"></center>
+				<center><input type="text" name="prezimeKorisnika" placeholder="Prezime"></center>
+				<center>
+					<label for="file-upload" class="custom-file-upload">
+   						 Dodaj sliku
+					</label>
+					<input id="file-upload" type="file"/>
+				</center>
+				<center><input type="submit" value="Dodaj korisnika"></center>
+			</div>
+
+
+		</section>
+
+		
+
+	</div>
+</body>
+</html>
